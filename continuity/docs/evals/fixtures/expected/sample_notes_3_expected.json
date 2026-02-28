@@ -1,0 +1,11 @@
+{
+  "people": [],
+  "topics": ["lease renewal", "deadline"],
+  "open_loops": [
+    {
+      "type": "Decision Pending",
+      "target": null,
+      "evidence_contains": "decide whether to renew the studio lease"
+    }
+  ]
+}

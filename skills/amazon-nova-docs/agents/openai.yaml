@@ -1,0 +1,4 @@
+interface:
+  display_name: "Amazon Nova Docs"
+  short_description: "Use official Amazon Nova docs accurately"
+  default_prompt: "Use $amazon-nova-docs to answer from the official Amazon Nova documentation."

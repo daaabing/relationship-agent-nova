@@ -1,0 +1,11 @@
+{
+  "people": ["Jo"],
+  "topics": ["meeting prep", "budget"],
+  "open_loops": [
+    {
+      "type": "Prep Needed",
+      "target": "Jo",
+      "evidence_contains": "Prep for meeting with Jo"
+    }
+  ]
+}
