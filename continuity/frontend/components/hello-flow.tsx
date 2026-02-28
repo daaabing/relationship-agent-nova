@@ -1,14 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
-type ParseNotesResponse = {
-  uploaded: boolean;
-  parsed: boolean;
-  aliasConfirmationRequired: boolean;
-  inbox: Array<unknown>;
-  message: string;
-};
+import type { ParseNotesResponse } from "../../shared/contracts";
 
 export function HelloFlow() {
   const [notesText, setNotesText] = useState("");

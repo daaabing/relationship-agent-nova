@@ -2,7 +2,7 @@
 
 Frontend:
 - Next.js
-- TailwindCSS
+- TailwindCSS (planned; not yet wired into the default Next.js scaffold)
 
 Backend:
 - FastAPI (Python)

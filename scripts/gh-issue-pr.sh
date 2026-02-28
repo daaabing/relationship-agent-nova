@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-REPO="daaabing/relationship-agent-nova"
+REPO="${GH_REPO:-}"
 
 usage() {
   cat <<'EOF'
@@ -31,6 +31,18 @@ Run:
   gh auth login --hostname github.com --git-protocol https --web
 Then rerun this command.
 EOF
+    exit 1
+  fi
+}
+
+resolve_repo() {
+  if [[ -n "$REPO" ]]; then
+    return
+  fi
+
+  REPO=$(gh repo view --json nameWithOwner --jq '.nameWithOwner' 2>/dev/null || true)
+  if [[ -z "$REPO" ]]; then
+    printf 'Unable to determine repository. Set GH_REPO=owner/name and rerun.\n' >&2
     exit 1
   fi
 }
@@ -107,6 +119,7 @@ main() {
   require_cmd gh
   require_cmd python3
   require_auth
+  resolve_repo
 
   case "$1" in
     start)

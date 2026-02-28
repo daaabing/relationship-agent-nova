@@ -9,7 +9,7 @@ Directory layout:
 
 Naming:
 - Use lowercase snake_case for Python modules and JSON fixtures
-- Use kebab-case for route paths and Markdown file names
+- Use kebab-case for route paths and snake_case for Markdown file names
 - Use PascalCase for React components
 - Name tests after the user behavior they verify
 
