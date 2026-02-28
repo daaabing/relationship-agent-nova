@@ -1,0 +1,11 @@
+{
+  "people": ["Maya"],
+  "topics": ["introduction", "commitment"],
+  "open_loops": [
+    {
+      "type": "Promise",
+      "target": "Maya",
+      "evidence_contains": "send the contractor intro by Friday"
+    }
+  ]
+}

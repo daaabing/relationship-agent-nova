@@ -1,0 +1,11 @@
+{
+  "people": ["Ran"],
+  "topics": ["work stress", "follow-up"],
+  "open_loops": [
+    {
+      "type": "Follow-up",
+      "target": "Ran",
+      "evidence_contains": "check in next week"
+    }
+  ]
+}

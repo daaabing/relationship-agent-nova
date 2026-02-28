@@ -1,0 +1,11 @@
+{
+  "people": ["Eli"],
+  "topics": ["relationship repair", "tension"],
+  "open_loops": [
+    {
+      "type": "Tension",
+      "target": "Eli",
+      "evidence_contains": "clear the tension before next week"
+    }
+  ]
+}
